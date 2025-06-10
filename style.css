@@ -11,36 +11,43 @@ body {
 
 .slider {
   position: relative;
-  width: 320px;
-  height: 480px;
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
   overflow: hidden;
 }
 
 .polaroid-container {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: calc(320px * 14); /* 1 capa + 12 fotos + 1 final */
 }
 
 .polaroid {
-  min-width: 320px;
-  height: 100%;
+  min-width: 100%;
   background: white;
-  padding: 10px;
+  padding: 15px;
+  box-sizing: border-box;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .polaroid img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 .polaroid p {
   font-family: 'Moontime', cursive;
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 12px;
+  line-height: 1.4;
 }
 
 .amor-script {
