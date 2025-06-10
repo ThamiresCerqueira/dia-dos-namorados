@@ -3,30 +3,82 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>12 Coisas Que Amo Sobre Você</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>12 Coisas que Amo Sobre Você</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Moontime&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="carousel-container">
-    <button class="nav-button prev" onclick="moveSlide(-1)">&#8249;</button>
-    <div class="carousel-track" id="track">
+  <div class="carousel-wrapper">
+    <button class="nav-button" id="prev">&#8592;</button>
+
+    <div class="carousel" id="carousel">
       <!-- Slide 0 - Capa -->
-      <div class="slide">
-        <div class="polaroid">
-          <img src="Foto 12.capa.png" alt="Capa">
-          <div class="phrase" style="font-size: 2rem; margin-top: 20px;">12 coisas que amo sobre você</div>
-        </div>
+      <div class="polaroid">
+        <img src="imagens/Foto12.capa.png" alt="Capa">
+        <p class="amor-script">Eu te amo, noivinho!</p>
       </div>
 
-      <!-- Slides com Fotos e Frases serão gerados via JavaScript -->
+      <!-- Slides com fotos e frases -->
+      <div class="polaroid">
+        <img src="imagens/Foto1.comvocê.jpeg" alt="Foto 1">
+        <p>Eu te amo porque posso ser exatamente quem sou quando estou com você.</p>
+      </div>
+      <div class="polaroid">
+        <img src="imagens/Foto2.acimadetudo.jpeg" alt="Foto 2">
+        <p>Eu te amo porque você me apoia acima de tudo.</p>
+      </div>
+      <div class="polaroid">
+        <img src="imagens/Foto3.sempremelhor.jpeg" alt="Foto 3">
+        <p>Eu te amo porque você sempre quer ser o melhor e me dar o melhor.</p>
+      </div>
+      <div class="polaroid">
+        <img src="imagens/Foto4.encontrei.jpeg" alt="Foto 4">
+        <p>Eu amo olhar para você e pensar: encontrei.</p>
+      </div>
+      <div class="polaroid">
+        <img src="imagens/Foto5.protegida.jpeg" alt="Foto 5">
+        <p>Eu amo como me sinto cuidada, amada e protegida por você.</p>
+      </div>
+      <div class="polaroid">
+        <img src="imagens/Foto6.séries.jpeg" alt="Foto 6">
+        <p>Eu te amo porque você é a pessoa ideal para maratonar séries.</p>
+      </div>
+      <div class="polaroid">
+        <img src="imagens/Foto7.memes.jpeg" alt="Foto 7">
+        <p>Eu te amo porque você me envia os melhores memes.</p>
+      </div>
+      <div class="polaroid">
+        <img src="imagens/Foto8.melhoramigo.jpeg" alt="Foto 8">
+        <p>Eu amo que você também é o meu melhor amigo.</p>
+      </div>
+      <div class="polaroid">
+        <img src="imagens/Foto9.mefazsorrir.jpeg" alt="Foto 9">
+        <p>Eu amo como você me faz sorrir.</p>
+      </div>
+      <div class="polaroid">
+        <img src="imagens/Foto10.inteligência.jpeg" alt="Foto 10">
+        <p>Eu amo a sua inteligência.</p>
+      </div>
+      <div class="polaroid">
+        <img src="imagens/Foto11.planejar.jpeg" alt="Foto 11">
+        <p>Eu amo planejar o meu futuro com você.</p>
+      </div>
+      <div class="polaroid">
+        <img src="imagens/Foto12.líder.jpeg" alt="Foto 12">
+        <p>Eu amo seguir a sua liderança e te ver amando Jesus, se tornando um homem segundo o coração dEle.</p>
+      </div>
 
+      <!-- Slide final -->
+      <div class="polaroid">
+        <h2 class="amor-script">Eu te amo!</h2>
+        <h3 class="vermelho">Feliz dia dos namorados!</h3>
+        <p>12.06.2025<br>❤️</p>
+      </div>
     </div>
-    <button class="nav-button next" onclick="moveSlide(1)">&#8250;</button>
-  </div>
 
-  <div class="bg_heart"></div>
+    <button class="nav-button" id="next">&#8594;</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
