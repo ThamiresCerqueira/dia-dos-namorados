@@ -1,19 +1,113 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>12 coisas que amo sobre você!</title>
-  <link href="style.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <title>12 Coisas que Amo Sobre Você!</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Moontime&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Feliz Dia dos Namorados! 💖</h1>
-  <div class="album-wrapper">
-<button id="prev" class="arrow-button">&#8592;</button> <!-- ← -->
-<div id="container"></div>
-<button id="next" class="arrow-button">&#8594;</button> <!-- → -->
+  <div class="album">
+    <!-- Página inicial -->
+    <div class="page">
+      <div class="polaroid no-photo">
+        <h1>12 coisas que amo sobre você</h1>
+      </div>
+    </div>
+
+    <!-- Páginas com foto + frase -->
+    <div class="page">
+      <div class="polaroid">
+        <img src="fotos/Foto1.comvocê.jpeg" alt="Foto 1"/>
+        <p>Eu te amo porque posso ser exatamente quem sou quando estou com você.</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="polaroid">
+        <img src="fotos/Foto2.acimadetudo.jpeg" alt="Foto 2"/>
+        <p>Eu te amo porque você me apoia acima de tudo.</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="polaroid">
+        <img src="fotos/Foto3.sempremelhor.jpeg" alt="Foto 3"/>
+        <p>Eu te amo porque você sempre quer ser o melhor e me dar o melhor.</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="polaroid">
+        <img src="fotos/Foto4.encontrei.jpeg" alt="Foto 4"/>
+        <p>Eu amo olhar para você e pensar: encontrei.</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="polaroid">
+        <img src="fotos/Foto5.protegida.jpeg" alt="Foto 5"/>
+        <p>Eu amo como me sinto cuidada, amada e protegida por você.</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="polaroid">
+        <img src="fotos/Foto6.séries.jpeg" alt="Foto 6"/>
+        <p>Eu te amo porque você é a pessoa ideal para maratonar séries.</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="polaroid">
+        <img src="fotos/Foto7.memes.jpeg" alt="Foto 7"/>
+        <p>Eu te amo porque você me envia os melhores memes.</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="polaroid">
+        <img src="fotos/Foto8.melhoramigo.jpeg" alt="Foto 8"/>
+        <p>Eu amo que você também é o meu melhor amigo.</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="polaroid">
+        <img src="fotos/Foto9.mefazsorrir.jpeg" alt="Foto 9"/>
+        <p>Eu amo como você me faz sorrir.</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="polaroid">
+        <img src="fotos/Foto10.inteligência.jpeg" alt="Foto 10"/>
+        <p>Eu amo a sua inteligência.</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="polaroid">
+        <img src="fotos/Foto11.planejar.jpeg" alt="Foto 11"/>
+        <p>Eu amo planejar o meu futuro com você.</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="polaroid">
+        <img src="fotos/Foto12.líder.jpeg" alt="Foto 12"/>
+        <p>Eu amo seguir a sua liderança e te ver amando Jesus, se tornando um homem segundo o coração dEle.</p>
+      </div>
+    </div>
+
+    <!-- Página final -->
+    <div class="page final">
+      <div class="polaroid no-photo">
+        <p class="love-script">Eu te amo!</p>
+        <p class="love-date">Feliz dia dos namorados</p>
+        <p class="love-date">12.06.2025 ❤️</p>
+        <button id="finalBtn">Clique aqui</button>
+      </div>
+    </div>
   </div>
+
+  <!-- Animação de corações -->
+  <div class="animation" id="animation">
+    <div class="heart-word">amor</div>
+    <p class="big-love">Eu te amo muito absurdamente!🦦❤️</p>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
