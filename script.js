@@ -1,4 +1,24 @@
 
+function showSlide(index) {
+  const container = document.getElementById('container');
+  container.innerHTML = '';
+
+  const slide = slides[index];
+  const slideDiv = document.createElement('div');
+  slideDiv.className = 'polaroid';
+
+  const img = document.createElement('img');
+  img.src = slide.image;
+  img.alt = slide.text;
+
+  const caption = document.createElement('p');
+  caption.textContent = slide.text;
+
+  slideDiv.appendChild(img);
+  slideDiv.appendChild(caption);
+  container.appendChild(slideDiv);
+}
+
 const fotos = [
   {
     imagem: "",
