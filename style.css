@@ -75,6 +75,20 @@ h3.vermelho {
   border-radius: 50%;
 }
 
+.final-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-slide h2,
+.final-slide h3,
+.final-slide p {
+  margin: 10px 0;
+  text-align: center;
+}
+
 #prev {
   left: 0;
 }
