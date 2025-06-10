@@ -6,59 +6,77 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 20px;
+  height: 100vh;
 }
 
-.album-container {
+.slider {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  overflow: hidden;
+}
+
+.polaroid-container {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 300px;
+  transition: transform 0.5s ease-in-out;
+  width: calc(320px * 14); /* 1 capa + 12 fotos + 1 final */
 }
 
 .polaroid {
+  min-width: 320px;
+  height: 100%;
   background: white;
   padding: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  border: 1px solid #ccc;
-  border-radius: 12px;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 12px;
 }
 
 .polaroid img {
   width: 100%;
-  height: auto;
   border-radius: 8px;
 }
 
 .polaroid p {
-  margin-top: 10px;
-  font-size: 16px;
   font-family: 'Moontime', cursive;
+  font-size: 20px;
+  margin-top: 10px;
 }
 
-.polaroid.final h2.amor-script {
+.amor-script {
   font-family: 'Moontime', cursive;
   font-size: 30px;
 }
 
-h3.vermelho {
+.vermelho {
   color: red;
-  margin: 10px 0;
 }
 
-.polaroid.final button {
-  padding: 10px 20px;
-  border: none;
-  background: #ff4d6d;
-  color: white;
-  font-weight: bold;
-  border-radius: 8px;
+button {
   cursor: pointer;
-  margin-top: 15px;
 }
 
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+/* Animação final */
 .animacao-final {
   position: fixed;
   top: 0;
@@ -71,53 +89,47 @@ h3.vermelho {
   align-items: center;
   flex-direction: column;
   z-index: 999;
-  text-align: center;
 }
 
 .coração-com-palavras {
-  font-size: 20px;
-  color: #e60073;
-}
-
-.amor-script {
-  font-family: 'Moontime', cursive;
+  text-align: center;
 }
 
 .amor-script.grande {
   font-size: 28px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: #e60073;
 }
 
-.coração {
-  font-family: monospace;
-  white-space: pre;
-  color: #ff6699;
-}
-
-/* Corações subindo */
-#corações {
+.bg_heart .heart {
   position: absolute;
-  bottom: 0;
+  top: -50%;
+  transform: rotate(-45deg);
+}
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
   width: 100%;
-  pointer-events: none;
+  height: 100%;
+  background: inherit;
+  border-radius: 100%;
+}
+.heart:before {
+  top: -50%;
+  left: 0;
+}
+.heart:after {
+  top: 0;
+  right: -50%;
 }
 
-.coração-anima {
-  position: absolute;
-  bottom: 0;
-  font-size: 20px;
-  color: #ff4d6d;
-  animation: subir 4s ease-in infinite;
-  opacity: 0.8;
+/* Keyframes */
+@keyframes love {
+  0% { top: 110%; }
+  100% { top: -10%; }
 }
-
-@keyframes subir {
-  0% {
-    transform: translateY(0);
-    opacity: 0.8;
-  }
-  100% {
-    transform: translateY(-100vh);
-    opacity: 0;
-  }
+@-webkit-keyframes love {
+  0% { top: 110%; }
+  100% { top: -10%; }
 }
