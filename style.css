@@ -1,91 +1,119 @@
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
+  background-color: #dbd7d3;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.album {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #dbd7d3;
-  background-image:
-    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='30'><text x='0' y='20' font-size='20' fill='rgba(0,0,0,0.01)' font-family='Great Vibes'>amor</text></svg>");
-  background-repeat: repeat;
-  background-size: 100px 30px;
+  gap: 30px;
+  padding: 20px;
 }
 
-h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 36px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.album-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-#container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 400px;
-  max-width: 300px;
-}
-
-.arrow-button {
-  background: none;
-  border: none;
-  font-size: 32px;
-  cursor: pointer;
-  padding: 8px;
-  color: #333;
-  transition: transform 0.2s ease;
-}
-
-.arrow-button:hover {
-  transform: scale(1.2);
-  color: #ffcf00;
+.page {
+  width: 300px;
+  height: 360px;
 }
 
 .polaroid {
   background: white;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  text-align: center;
   border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .polaroid img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .polaroid p {
-  font-family: 'Great Vibes', cursive;
-  font-size: 16px;
-  margin-top: 10px;
+  font-family: 'Moontime', cursive;
+  font-size: 20px;
+  margin: 10px 0 0 0;
 }
 
-.pagina-especial {
-  font-family: 'Great Vibes', cursive;
+.no-photo h1 {
+  font-family: 'Moontime', cursive;
   font-size: 28px;
-  text-align: center;
-  padding: 20px;
-  background: #dbd7d3;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  border-radius: 10px;
-  max-width: 300px;
+  margin: auto;
+  color: #333;
 }
 
-.pagina-especial.final {
-  background: #fffaf0;
+.final .love-script {
+  font-family: 'Moontime', cursive;
+  font-size: 28px;
+  margin: 10px 0;
 }
 
-.pagina-especial.capa {
-  background: #f5f5dc;
+.final .love-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: red;
+  margin: 5px 0;
+}
+
+#finalBtn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.95);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.heart-word {
+  font-family: 'Moontime', cursive;
+  font-size: 60px;
+  color: pink;
+  animation: float 2s infinite;
+}
+
+.big-love {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: red;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
