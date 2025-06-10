@@ -2,62 +2,66 @@
 const fotos = [
   {
     imagem: "",
-    frase: `<div class="pagina-especial capa">12 coisas que amo sobre você!<br>📸❤️</div>`
+    frase: `<div class="pagina-especial capa">12 coisas que amo sobre você!<br>❤️</div>`
   },
   {
-    imagem: "imagens/Foto1.comvocê.jpg",
+    imagem: "imagens/Foto1.comvocê.jpeg",
     frase: "Eu te amo porque posso ser exatamente quem sou quando estou com você."
   },
   {
-    imagem: "imagens/Foto2.acimadetudo.jpg",
+    imagem: "imagens/Foto2.acimadetudo.jpeg",
     frase: "Eu te amo porque você me apoia acima de tudo."
   },
   {
-    imagem: "imagens/Foto3.sempremelhor.jpg",
-    frase: "Eu te amo porque você sempre quer ser o melhor e me dar o melhor."
+    imagem: "imagens/Foto3.sempremelhor.jpeg",
+    frase: "Eu te amo porque você sempre quer ser 
+      o melhor e me dar o melhor."
   },
   {
-    imagem: "imagens/Foto4.encontrei.jpg",
+    imagem: "imagens/Foto4.encontrei.jpeg",
     frase: "Eu amo olhar para você e pensar: encontrei."
   },
   {
-    imagem: "imagens/Foto5.protegida.jpg",
+    imagem: "imagens/Foto5.protegida.jpeg",
     frase: "Eu amo como me sinto cuidada, amada e protegida por você."
   },
   {
-    imagem: "imagens/Foto6.séries.jpg",
-    frase: "Eu te amo porque você é a pessoa ideal para maratonar séries."
+    imagem: "imagens/Foto6.séries.jpeg",
+    frase: "Eu te amo porque você é a pessoa ideal para 
+      maratonar séries."
   },
   {
     imagem: "imagens/Foto7.memes.jpg",
     frase: "Eu te amo porque você me envia os melhores memes."
   },
   {
-    imagem: "imagens/Foto8.melhoramigo.jpg",
+    imagem: "imagens/Foto8.melhoramigo.jpeg",
     frase: "Eu amo que você também é o meu melhor amigo."
   },
   {
-    imagem: "imagens/Foto9.mefazsorrir.jpg",
+    imagem: "imagens/Foto9.mefazsorrir.jpeg",
     frase: "Eu amo como você me faz sorrir."
   },
   {
-    imagem: "imagens/Foto10.inteligência.jpg",
+    imagem: "imagens/Foto10.inteligência.jpeg",
     frase: "Eu amo a sua inteligência."
   },
   {
-    imagem: "imagens/Foto11.planejar.jpg",
+    imagem: "imagens/Foto11.planejar.jpeg",
     frase: "Eu amo planejar o meu futuro com você."
   },
   {
-    imagem: "imagens/Foto12.líder.jpg",
-    frase: "Eu amo seguir a sua liderança e te ver amando Jesus, se tornando um homem segundo o coração dEle."
+    imagem: "imagens/Foto12.líder.jpeg",
+    frase: "Eu amo seguir a sua liderança e te ver amando Jesus, 
+      se tornando um homem segundo o coração dEle."
   },
   {
     imagem: "",
     frase: `<div class="pagina-especial final">
       <div style="font-family: 'Great Vibes', cursive; font-size: 36px;">Eu te amo!</div>
       <div style="color: red; font-size: 20px;">Feliz Dia dos Namorados</div>
-      <div>12.06.2025 ❤️</div>
+      <div>12.06.2025</div>
+      <div>❤️</div>
     </div>`
   }
 ];
