@@ -2,8 +2,9 @@
 let paginaAtual = 0;
 const container = document.getElementById('polaroidContainer');
 
-function atualizarSlider() {
-  container.style.transform = `translateX(-${paginaAtual * 320}px)`;
+function updateSlide() {
+  const polaroidWidth = document.querySelector('.slider').offsetWidth;
+  polaroidContainer.style.transform = `translateX(-${currentIndex * polaroidWidth}px)`;
 }
 
 function avancarPagina() {
