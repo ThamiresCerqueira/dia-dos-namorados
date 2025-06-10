@@ -2,92 +2,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Feliz Dia dos Namorados!</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>12 Coisas que Amo Sobre Você</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Moontime&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="album-container" id="album">
-    <!-- Página 1 -->
-    <div class="polaroid">
-      <h2>12 coisas que amo sobre você!</h2>
-    </div>
+  <div class="slider">
+    <button class="nav left" onclick="voltarPagina()">❮</button>
+    <div class="polaroid-container" id="polaroidContainer">
+      <!-- Cada "página" Polaroid -->
+      <div class="polaroid">
+        <h2>12 coisas que amo sobre você</h2>
+      </div>
 
-    <!-- Páginas com fotos e frases -->
-    <div class="polaroid">
-      <img src="imagens/Foto1.comvocê.jpeg" alt="Foto 1">
-      <p>Eu te amo porque posso ser exatamente quem sou quando estou com você.</p>
-    </div>
-    <div class="polaroid">
-      <img src="imagens/Foto2.acimadetudo.jpeg" alt="Foto 2">
-      <p>Eu te amo porque você me apoia acima de tudo.</p>
-    </div>
-    <div class="polaroid">
-      <img src="imagens/Foto3.sempremelhor.jpeg" alt="Foto 3">
-      <p>Eu te amo porque você sempre quer ser o melhor e me dar o melhor.</p>
-    </div>
-    <div class="polaroid">
-      <img src="imagens/Foto4.encontrei.jpeg" alt="Foto 4">
-      <p>Eu amo olhar para você e pensar: encontrei.</p>
-    </div>
-    <div class="polaroid">
-      <img src="imagens/Foto5.protegida.jpeg" alt="Foto 5">
-      <p>Eu amo como me sinto cuidada, amada e protegida por você.</p>
-    </div>
-    <div class="polaroid">
-      <img src="imagens/Foto6.séries.jpeg" alt="Foto 6">
-      <p>Eu te amo porque você é a pessoa ideal para maratonar séries.</p>
-    </div>
-    <div class="polaroid">
-      <img src="imagens/Foto7.memes.jpeg" alt="Foto 7">
-      <p>Eu te amo porque você me envia os melhores memes.</p>
-    </div>
-    <div class="polaroid">
-      <img src="imagens/Foto8.melhoramigo.jpeg" alt="Foto 8">
-      <p>Eu amo que você também é o meu melhor amigo.</p>
-    </div>
-    <div class="polaroid">
-      <img src="imagens/Foto9.mefazsorrir.jpeg" alt="Foto 9">
-      <p>Eu amo como você me faz sorrir.</p>
-    </div>
-    <div class="polaroid">
-      <img src="imagens/Foto10.inteligência.jpeg" alt="Foto 10">
-      <p>Eu amo a sua inteligência.</p>
-    </div>
-    <div class="polaroid">
-      <img src="imagens/Foto11.planejar.jpeg" alt="Foto 11">
-      <p>Eu amo planejar o meu futuro com você.</p>
-    </div>
-    <div class="polaroid">
-      <img src="imagens/Foto12.líder.jpeg" alt="Foto 12">
-      <p>Eu amo seguir a sua liderança e te ver amando Jesus, se tornando um homem segundo o coração dEle.</p>
-    </div>
+      <!-- Páginas com fotos e frases -->
+      <div class="polaroid"><img src="Fotos/Foto1.comvocê.jpg"><p>Eu te amo porque posso ser exatamente quem sou quando estou com você.</p></div>
+      <div class="polaroid"><img src="Fotos/Foto2.acimadetudo.jpg"><p>Eu te amo porque você me apoia acima de tudo.</p></div>
+      <div class="polaroid"><img src="Fotos/Foto3.sempremelhor.jpg"><p>Eu te amo porque você sempre quer ser o melhor e me dar o melhor.</p></div>
+      <div class="polaroid"><img src="Fotos/Foto4.encontrei.jpg"><p>Eu amo olhar para você e pensar: encontrei.</p></div>
+      <div class="polaroid"><img src="Fotos/Foto5.protegida.jpg"><p>Eu amo como me sinto cuidada, amada e protegida por você.</p></div>
+      <div class="polaroid"><img src="Fotos/Foto6.séries.jpg"><p>Eu te amo porque você é a pessoa ideal para maratonar séries.</p></div>
+      <div class="polaroid"><img src="Fotos/Foto7.memes.jpg"><p>Eu te amo porque você me envia os melhores memes.</p></div>
+      <div class="polaroid"><img src="Fotos/Foto8.melhoramigo.jpg"><p>Eu amo que você também é o meu melhor amigo.</p></div>
+      <div class="polaroid"><img src="Fotos/Foto9.mefazsorrir.jpg"><p>Eu amo como você me faz sorrir.</p></div>
+      <div class="polaroid"><img src="Fotos/Foto10.inteligência.jpg"><p>Eu amo a sua inteligência.</p></div>
+      <div class="polaroid"><img src="Fotos/Foto11.planejar.jpg"><p>Eu amo planejar o meu futuro com você.</p></div>
+      <div class="polaroid"><img src="Fotos/Foto12.líder.jpg"><p>Eu amo seguir a sua liderança e te ver amando Jesus, se tornando um homem segundo o coração dEle.</p></div>
 
-    <!-- Página final -->
-    <div class="polaroid final">
-      <h2 class="amor-script">Eu te amo!</h2>
-      <h3 class="vermelho">Feliz dia dos namorados</h3>
-      <p>12.06.2025<br>❤️</p>
-      <button onclick="mostrarAnimacao()">Clique aqui!</button>
+      <!-- Última página -->
+      <div class="polaroid final">
+        <h2 class="amor-script">Eu te amo!</h2>
+        <h3 class="vermelho">Feliz dia dos namorados</h3>
+        <p>12.06.2025<br>❤️</p>
+        <button onclick="mostrarAnimacao()">Clique aqui</button>
+      </div>
     </div>
+    <button class="nav right" onclick="avancarPagina()">❯</button>
   </div>
 
-  <!-- Animação final -->
+  <!-- Tela da animação -->
   <div class="animacao-final" id="animacaoFinal">
     <div class="coração-com-palavras">
       <span class="amor-script grande">Eu te amo muito absurdamente!</span>
-      <pre class="coração">
-           amor   amor
-       amor         amor
-    amor             amor
-     amor          amor
-        amor     amor
-           amor
-      </pre>
+      <div class="bg_heart"></div>
     </div>
-    <div id="corações"></div>
   </div>
 
   <script src="script.js"></script>
