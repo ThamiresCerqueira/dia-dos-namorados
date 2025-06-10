@@ -36,20 +36,19 @@ h1 {
   max-width: 300px;
 }
 
-#prev, #next {
-    background-color: #ec407a;
-    color: white;
-    font-size: 24px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 10px;
+.arrow-button {
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 8px;
+  color: #333;
+  transition: transform 0.2s ease;
 }
 
-#prev:hover, #next:hover {
-    background-color: #d81b60;
+.arrow-button:hover {
+  transform: scale(1.2);
+  color: #ec407a;
 }
 
 .polaroid {
