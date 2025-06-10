@@ -12,15 +12,16 @@ body {
 
 .carousel-wrapper {
   position: relative;
-  width: 320px;
+  width: 320px; /* ou o mesmo valor do slide */
   height: 450px;
-  overflow: hidden;
+  overflow: hidden; /* ESSENCIAL para esconder os outros slides */
 }
 
 .carousel {
   display: flex;
-  transition: transform 0.5s ease-in-out;
   height: 100%;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
 }
 
 .polaroid {
