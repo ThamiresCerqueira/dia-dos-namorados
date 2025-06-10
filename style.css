@@ -9,6 +9,13 @@ body {
   height: 100vh;
 }
 
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+}
+
 .slider {
   position: relative;
   width: 100%;
