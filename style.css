@@ -1,119 +1,123 @@
 
 body {
   margin: 0;
-  background-color: #dbd7d3;
   font-family: 'Montserrat', sans-serif;
+  background: #dbd7d3;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-}
-
-.album {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 30px;
   padding: 20px;
 }
 
-.page {
+.album-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 300px;
-  height: 360px;
 }
 
 .polaroid {
   background: white;
-  border: 1px solid #ccc;
   padding: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+  border-radius: 12px;
   text-align: center;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .polaroid img {
   width: 100%;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-.polaroid p {
-  font-family: 'Moontime', cursive;
-  font-size: 20px;
-  margin: 10px 0 0 0;
-}
-
-.no-photo h1 {
-  font-family: 'Moontime', cursive;
-  font-size: 28px;
-  margin: auto;
-  color: #333;
-}
-
-.final .love-script {
-  font-family: 'Moontime', cursive;
-  font-size: 28px;
-  margin: 10px 0;
-}
-
-.final .love-date {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  color: red;
-  margin: 5px 0;
-}
-
-#finalBtn {
-  margin-top: 10px;
-  padding: 8px 16px;
-  font-size: 14px;
-  cursor: pointer;
-  background-color: #f44336;
-  color: white;
-  border: none;
+  height: auto;
   border-radius: 8px;
 }
 
-.animation {
+.polaroid p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: 'Moontime', cursive;
+}
+
+.polaroid.final h2.amor-script {
+  font-family: 'Moontime', cursive;
+  font-size: 30px;
+}
+
+h3.vermelho {
+  color: red;
+  margin: 10px 0;
+}
+
+.polaroid.final button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.animacao-final {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255,255,255,0.95);
+  background: rgba(255,255,255,0.95);
   display: none;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   z-index: 999;
-  animation: fadeIn 1s ease-in-out forwards;
+  text-align: center;
 }
 
-.heart-word {
+.coração-com-palavras {
+  font-size: 20px;
+  color: #e60073;
+}
+
+.amor-script {
   font-family: 'Moontime', cursive;
-  font-size: 60px;
-  color: pink;
-  animation: float 2s infinite;
 }
 
-.big-love {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  color: red;
-  margin-top: 20px;
+.amor-script.grande {
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.coração {
+  font-family: monospace;
+  white-space: pre;
+  color: #ff6699;
 }
 
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+/* Corações subindo */
+#corações {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.coração-anima {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  color: #ff4d6d;
+  animation: subir 4s ease-in infinite;
+  opacity: 0.8;
+}
+
+@keyframes subir {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
 }
