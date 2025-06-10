@@ -3,103 +3,77 @@ body {
   margin: 0;
   background-color: #0c2840;
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.slider {
-  max-width: 360px;
-  margin: 0 auto;
+.carousel-container {
+  display: flex;
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
-.polaroid-container {
+.carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .polaroid {
-  width: 100%;
-  min-height: 500px;
-  max-width: 360px;
   background: white;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 10px;
-  box-sizing: border-box;
-  flex-shrink: 0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 360px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: center;
+  border-radius: 10px;
 }
 
-.polaroid-img {
+.polaroid img {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  border-radius: 8px;
 }
 
-.caption {
+.phrase {
   font-family: 'Moontime', cursive;
-  font-size: 22px;
-  margin-top: 15px;
-  text-align: center;
-}
-
-.love-script {
-  font-family: 'Moontime', cursive;
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.final-message {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  color: red;
-}
-
-.date {
-  font-size: 18px;
-}
-
-.controls {
-  text-align: center;
+  font-size: 1.5rem;
   margin-top: 10px;
 }
 
-.controls button {
-  font-size: 24px;
-  padding: 10px 20px;
-  margin: 0 10px;
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.8);
+  border: none;
+  font-size: 2rem;
   cursor: pointer;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  z-index: 10;
 }
 
-.heart-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
+.prev { left: 20px; }
+.next { right: 20px; }
 
 .bg_heart {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
+  overflow: hidden;
   top: 0;
   left: 0;
-  overflow: hidden;
+  pointer-events: none;
 }
 
 .heart {
@@ -107,26 +81,28 @@ body {
   top: -50%;
   transform: rotate(-45deg);
 }
+
 .heart:before,
 .heart:after {
   content: "";
   position: absolute;
+  width: 100%;
+  height: 100%;
   background: inherit;
   border-radius: 100%;
 }
+
 .heart:before {
   top: -50%;
   left: 0;
-  width: 100%;
-  height: 100%;
 }
+
 .heart:after {
   top: 0;
   right: -50%;
-  width: 100%;
-  height: 100%;
 }
 
 @keyframes love {
   0% { top: 110%; }
+  100% { top: -10%; opacity: 0; }
 }
