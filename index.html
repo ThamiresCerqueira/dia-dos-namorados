@@ -9,12 +9,11 @@
 </head>
 <body>
   <div class="slider">
-    <button class="nav left" onclick="voltarPagina()">❮</button>
-    <div class="polaroid-container" id="polaroidContainer">
-      <!-- Cada "página" Polaroid -->
-<div class="polaroid">
-  <h1 class="title">12 coisas que amo sobre você!❤️🍀📸👰🤵🌸🌻➡️</h1>
-</div>
+  <div class="polaroid-container" id="polaroidContainer">
+    <div class="polaroid"> <!-- Slide 1 -->
+      <h1 class="title">12 coisas que amo sobre você!❤️🍀📸👰🤵🌸🌻➡️</h1>
+    </div>
+    <div class="polaroid">
 
       <!-- Páginas com fotos e frases -->
       <div class="polaroid"><img src="imagens/Foto1.comvocê.jpeg"><p>Eu te amo porque posso ser exatamente quem sou quando estou com você.</p></div>
@@ -31,16 +30,20 @@
       <div class="polaroid"><img src="imagens/Foto12.líder.jpeg"><p>Eu amo seguir a sua liderança e te ver amando Jesus, se tornando um homem segundo o coração dEle.</p></div>
 
       <!-- Última página -->
-      <div class="polaroid final">
-        <p class="love-script">Eu te amo!</p>
-        <p style="color: red; font-family: 'Montserrat', sans-serif;">Feliz dia dos namorados</p>
-        <p style="font-family: 'Montserrat', sans-serif;">12.06.2025</p>
-        <p style="font-size: 30px;">❤️</p>
-        <button class="heart-button" onclick="startHearts()">Clique aqui</button>
+      <div class="polaroid"> <!-- Slide final -->
+      <p class="love-script">Eu te amo!</p>
+      <p style="color: red; font-family: 'Montserrat', sans-serif;">Feliz dia dos namorados</p>
+      <p style="font-family: 'Montserrat', sans-serif;">12.06.2025</p>
+      <p style="font-size: 30px;">❤️</p>
+      <button class="heart-button" onclick="startHearts()">Clique aqui</button>
     </div>
-    </div>
-    <button class="nav right" onclick="avancarPagina()">❯</button>
   </div>
+</div>
+
+<div class="controls">
+  <button onclick="prevSlide()">←</button>
+  <button onclick="nextSlide()">→</button>
+</div>
 
   <!-- Tela da animação -->
   <div class="animacao-final" id="animacaoFinal">
