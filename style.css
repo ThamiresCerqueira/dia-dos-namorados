@@ -1,0 +1,87 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff0f5;
+  background-image:
+    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='30'><text x='0' y='20' font-size='20' fill='rgba(0,0,0,0.01)' font-family='Great Vibes'>amor</text></svg>");
+  background-repeat: repeat;
+  background-size: 100px 30px;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.album-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  max-width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff6f91;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.polaroid {
+  background: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.polaroid p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.pagina-especial {
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+  text-align: center;
+  padding: 20px;
+  background: #f9e4e4;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.pagina-especial.final {
+  background: #fffaf0;
+}
+
+.pagina-especial.capa {
+  background: #f5f5dc;
+}
